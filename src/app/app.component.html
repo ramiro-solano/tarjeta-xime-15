@@ -1,0 +1,228 @@
+<main class="max-w-2xl w-full h-ful m-auto">
+  <!-- Sección 1 -->
+  <section class="w-full h-full bg-black bg-[url(/assets/fotos/img-1.jpg)] bg-contain bg-no-repeat bg-center flex items-center justify-center">
+    <div class="relative bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center">
+      <div class="absolute top-24">
+        <span class=" text-center text-6xl font-extralight text-white font-parisienne">mis</span> 
+      </div>
+      <div class="flex flex-col items-center justify-center space-x-4 mt-80 space-y-6">
+
+        <h2 class="font-parisienne text-8xl text-white text-center mt-">
+          Maia
+        </h2>
+
+        <ul class="flex justify-center items-center gap-6 w-full [&>li>span]:text-white">
+        <li class="flex flex-col items-center space-x-2 space-y-2">
+          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+            {{reaminingDays}}
+          </div>
+          <span class="font-light text-sm">
+            DÍAS
+          </span>
+        </li>
+        <li class="flex flex-col items-center space-x-2 space-y-2">
+          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+            {{remainingHours}}
+          </div>
+          <span class="font-light text-sm">
+            HORAS
+          </span>
+        </li>
+        <li class="flex flex-col items-center space-x-2 space-y-2">
+            <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+                {{remainingMinutes}}
+            </div>
+            <span class="font-light text-sm">
+                MIN
+            </span>
+        </li>
+        <li class="flex flex-col items-center space-x-2 space-y-2">
+          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+            {{remainingSeconds}}
+            </div>
+            <span class="font-light text-sm">
+                SEG
+            </span>
+        </li>
+      </ul>
+      
+      <div (click)="playMusic()">
+        @if (!isPause) {
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white/50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+        }
+        @else {
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white/50">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+            </svg>
+          }
+      </div>
+    </div>
+    </div>
+  </section>
+  
+
+  <section class="w-full h-full bg-[url(/assets/fotos/img-2.jpg)] bg-cover bg-center flex items-center justify-center">
+    <div class="bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex items-center justify-center px-4">
+      <h1 class="font-serif text-2xl text-white mt-96 text-center">
+        Los momentos más importantes, merecen ser compartidos.
+      </h1>
+    </div>
+  </section>
+
+  <section class="w-full h-full bg-[url(/assets/fotos/img-13.jpg)] bg-cover bg-center flex items-center justify-center text-white">
+    <div class="bg-black/60 backdrop-invert backdrop-opacity-20 h-screen w-full flex flex-col items-center justify-center px-4 space-y-4">
+      <p class="font-parisienne text-5xl text-center">La fiesta</p>
+      
+      <div class="flex flex-col items-start justify-center space-y-4 w-full">
+        <img src="../assets/fotos/salon.png" class="rounded-2xl">
+        
+        <h1 class="font-bold text-xl">Hilario Eventos</h1>
+
+        <div class="flex flex-col text-base font-serif items-start justify-center space-y-3">
+          <p class="font-bold">
+            Día y horario: 
+            <span class="font-normal block">12 de abril, de 22:00 a 23:30</span>
+            <span class="font-normal block">¡Los esperamos para disfrutar de una deliciosa recepción! 🍽✨</span>
+            <span class="font-normal block">Hasta las 06:00</span>
+          </p>
+          <p class="font-bold">
+            Lugar: 
+            <span class="font-normal block">T4103 Tafí Viejo, Tucumán</span>
+          </p>
+        </div>
+      
+        <button (click)="salonMap()" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+        <span>Ver Direccion</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex items-center justify-center flex-col gap-6 py-20 px-4 relative">
+    <div class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(106,90,150,.5)_120%)]"></div>
+    <p class="font-parisienne text-5xl text-center">Dress Code</p>
+    <img src="../assets/fotos/dress-code.webp" class="size-44">
+    <p class="text-center font-bold font-serif text-2xl">- Elegante -</p>
+    <p class="text-center font-serif text-2xl">Por favor no asistir con colores como lila y dorado</p>
+  </section>
+
+  <section class="flex w-full relative items-center justify-center flex-col gap-6 py-20 px-4">
+    <div class="absolute inset-0 -z-10 h-full w-full bg-purple-300/20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <p class="font-parisienne text-5xl text-center">Photoshoot</p>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 text-gray-100/30 absolute right-8 z-10 bottom-[43%]">
+      <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+    </svg>
+
+    <div class="aspect-square w-full relative flex overflow-scroll snap-x snap-mandatory [&>img]:w-full [&>img]:left-0 [&>img]:sticky [&>img]:object-cover [&>img]:rounded-3xl [&>img]:snap-start">
+      
+      <img src="../assets/fotos/img-3.jpg" class="object-cover">
+      <img src="../assets/fotos/img-4.jpg" class="object-cover">
+      <img src="../assets/fotos/img-17.jpg" class="object-cover">
+      <img src="../assets/fotos/img-18.jpg" class="object-cover">
+      <img src="../assets/fotos/img-5.jpg" class="object-cover object-right">
+      <img src="../assets/fotos/img-6.jpg" class="object-left">
+      <img src="../assets/fotos/img-7.jpg" class="">
+      <img src="../assets/fotos/img-8.jpg" class="">
+      <img src="../assets/fotos/img-9.jpg" class="">
+      <img src="../assets/fotos/img-10.jpg" class="">
+    </div>
+  </section>
+
+  <section class="w-full h-full bg-[url(/assets/fotos/img-12.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center ">
+    <div class="relative bg-white/55 backdrop-invert backdrop-opacity-15 h-screen w-full flex flex-col items-center justify-center space-y-10 p-4">
+      <p class="font-parisienne text-5xl text-center">Mesa de regalos</p>
+      <p class="font-serif text-2xl text-center">Para mí tu presencia es el mejor regalo, pero si deseas obsequiarme algo,te dejo mis datos.</p>
+      <div class="flex flex-col items-start justify-center bg-purple-500/30 w-full rounded-3xl p-5 [&>p]:w-full space-y-4 border border-white/30 backdrop-blur-sm">
+        <p class="font-bold">
+          Nombre y Apellido:<br>
+          <span class="font-normal">
+            Maia del Milagro Leccese
+          </span>
+        </p>
+        <p class="font-bold">
+          CVU:<br>
+          <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
+            0000003100041259642881
+              <svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            </span>
+        </p>
+
+        <p class="font-bold">
+          Alias:<br>
+          <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
+            maia.969.silo.mp
+            <svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          </span>
+        </p>
+        
+        <p class="font-bold">
+          CUIT/CUIL:<br>
+          <span class="font-normal">
+            27501059698
+          </span>
+        </p>
+        
+        <p class="font-bold">
+          Banco:<br>
+          <span class="font-normal">
+            Mercado Pago
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="h-full w-full flex items-center justify-center bg-[url(/assets/fotos/img-14.jpg)] bg-cover bg-no-repeat bg-center">
+    <div class="relative bg-white/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center space-y-20 py-20 px-4">
+      <p class="font-parisienne text-5xl text-center">Confirmar Asistencia</p>
+      <p class="text-center font-serif text-2xl">Por favor confirmar su asistencia hasta el lunes 7 de abril</p>
+      
+      <div class="flex flex-col items-center justify-center gap-6 w-full">
+        <button (click)="openwhatsapp(3815585823)" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+          <span>CONFIRMAR A 3815585823</span>
+        </button>
+        <button (click)="openwhatsapp(3813979293)" class="bg-purple-800/50 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+          <span>CONFIRMAR A 3813979293</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex items-center justify-center flex-col h-screen gap-6 relative">
+    <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_200%)]"></div>
+    <p class="font-parisienne text-5xl text-center">La Misa</p>
+    <div class="flex flex-col items-start justify-center p-4 gap-6 w-full">
+      <img src="../assets/fotos/iglesia.jpg" class="rounded-2xl">
+      <h1 class="font-bold text-xl">Iglesia Virgen de la Merced</h1>
+      <div class="flex flex-col text-sm items-start justify-center gap-1">
+        <h1 class="font-bold">Día y horario: <span class="font-normal">9 de abril, 20:00</span></h1>
+        <h1 class="font-bold">Dirreccion: <span class="font-normal">24 de Septiembre 253</span></h1>
+      </div>
+
+      <button (click)="iglesiaMap()" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+        <span>Ver Direccion</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="w-full h-screen bg-[url(/assets/fotos/img-11.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center">
+    <div class="bg-black/30 backdrop-invert backdrop-opacity-10 h-full w-full flex items-center justify-center">
+      <p class="font-serif text-2xl text-white text-center mt-56">Te espero <br><span class="font-parisienne text-5xl">Maia</span></p>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+ @if (isModalOpen) {
+   <div class="fixed inset-0 flex items-center justify-center bg-black/50 p-4">
+     <div class="bg-white p-6 rounded-3xl text-center max-w-md w-full shadow-2xl">
+       <div class="flex justify-center">
+         <button (click)="playMusic()" class="bg-purple-800 text-white px-4 py-2 rounded-full">Entrar</button>
+        </div>
+      </div>
+    </div>
+  }
