@@ -92,10 +92,10 @@ export class AppComponent {
 				const successful = document.execCommand('copy');
 				if (successful) {
 					pElement.classList.remove('bg-slate-200');
-					pElement.classList.add('bg-purple-500/50');
+					pElement.classList.add('bg-pink-500/50');
 
 					setTimeout(() => {
-						pElement.classList.remove('bg-purple-500/50');
+						pElement.classList.remove('bg-pink-500/50');
 						pElement.classList.add('bg-slate-200');
 					}, 2000);
 				} else {
