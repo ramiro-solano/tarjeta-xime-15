@@ -5,12 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'maia-mis-15';
   isPause = true
-  endDate: Date =  new Date(2025, 3, 12, 21, 30, 0);
+  //Fecha: ano, mes (0-11), día, hora, minuto, segundo
+  endDate: Date =  new Date(2026, 1, 28, 21, 30, 0);
 	reaminingDays!: number;
 	remainingHours!: number;
 	remainingMinutes!: number;
@@ -114,17 +113,17 @@ export class AppComponent {
 	}
 
 	openwhatsapp(numero: number) {
-		const mensaje = encodeURIComponent("Hola, quiero confirmar mi asistencia al 15 de Maia.");
+		const mensaje = encodeURIComponent("Hola, quiero confirmar mi asistencia al 15 de Ximena.");
 		const url = `https://wa.me/+549${numero}?text=${mensaje}`;
 		window.open(url, "_blank");
 	}
 	
 
 	salonMap() {
-		window.open('https://maps.app.goo.gl/oDMJWASmpfomwMxv8');
+		window.open('https://maps.app.goo.gl/SzC6upRZVkbLEmSH6');
 	}
 
 	iglesiaMap() {
-		window.open('https://maps.app.goo.gl/Qp2Lxc3qaj19HUWT7');
+		window.open('https://maps.app.goo.gl/SA3XWZzHVyu5NB2k9');
 	}
 }

@@ -1,6 +1,8 @@
 <main class="max-w-2xl w-full h-ful m-auto">
-  <!-- Sección 1 -->
-  <section class="w-full h-full bg-black bg-[url(/assets/fotos/img-1.jpg)] bg-contain bg-no-repeat bg-center flex items-center justify-center">
+  <!-- S1 -->
+  <section class="w-full h-full bg-black  flex items-center justify-center relative">
+    <div class="absolute -top-20 inset-0 bg-[url(/assets/fotos/img-main.jpg)] bg-contain bg-no-repeat bg-center">
+    </div>
     <div class="relative bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center">
       <div class="absolute top-24">
         <span class=" text-center text-6xl font-extralight text-white font-parisienne">mis</span> 
@@ -8,7 +10,7 @@
       <div class="flex flex-col items-center justify-center space-x-4 mt-80 space-y-6">
 
         <h2 class="font-parisienne text-8xl text-white text-center mt-">
-          Maia
+          Xime
         </h2>
 
         <ul class="flex justify-center items-center gap-6 w-full [&>li>span]:text-white">
@@ -63,8 +65,8 @@
     </div>
   </section>
   
-
-  <section class="w-full h-full bg-[url(/assets/fotos/img-2.jpg)] bg-cover bg-center flex items-center justify-center">
+  <!-- S2 -->
+  <section class="w-full h-full bg-[url(/assets/fotos/img-second.jpg)] bg-cover bg-center flex items-center justify-center">
     <div class="bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex items-center justify-center px-4">
       <h1 class="font-serif text-2xl text-white mt-96 text-center">
         Los momentos más importantes, merecen ser compartidos.
@@ -72,25 +74,26 @@
     </div>
   </section>
 
+  <!-- S3 -->
   <section class="w-full h-full bg-[url(/assets/fotos/img-13.jpg)] bg-cover bg-center flex items-center justify-center text-white">
     <div class="bg-black/60 backdrop-invert backdrop-opacity-20 h-screen w-full flex flex-col items-center justify-center px-4 space-y-4">
       <p class="font-parisienne text-5xl text-center">La fiesta</p>
       
-      <div class="flex flex-col items-start justify-center space-y-4 w-full">
-        <img src="../assets/fotos/salon.png" class="rounded-2xl">
+      <div class="flex flex-col items-center justify-center space-y-4 w-full">
+        <img src="../assets/fotos/salon.png" class="rounded-2xl sm:max-w-md">
         
-        <h1 class="font-bold text-xl">Hilario Eventos</h1>
+        <h1 class="font-bold text-xl">Salón Franchesca</h1>
 
         <div class="flex flex-col text-base font-serif items-start justify-center space-y-3">
           <p class="font-bold">
             Día y horario: 
-            <span class="font-normal block">12 de abril, de 22:00 a 23:30</span>
+            <span class="font-normal block">28 de febrero, de 22:00 a 23:30</span>
             <span class="font-normal block">¡Los esperamos para disfrutar de una deliciosa recepción! 🍽✨</span>
-            <span class="font-normal block">Hasta las 06:00</span>
+            <span class="font-normal block">Hasta las 05:00</span>
           </p>
           <p class="font-bold">
             Lugar: 
-            <span class="font-normal block">T4103 Tafí Viejo, Tucumán</span>
+            <span class="font-normal block">La plata 2463 SMT, Tucumán</span>
           </p>
         </div>
       
@@ -101,15 +104,17 @@
     </div>
   </section>
 
-  <section class="flex items-center justify-center flex-col gap-6 py-20 px-4 relative">
+  <!-- S4 -->
+  <section class="flex items-center justify-center flex-col h-screen gap-6 py-20 px-4 relative">
     <div class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(106,90,150,.5)_120%)]"></div>
     <p class="font-parisienne text-5xl text-center">Dress Code</p>
     <img src="../assets/fotos/dress-code.webp" class="size-44">
     <p class="text-center font-bold font-serif text-2xl">- Elegante -</p>
-    <p class="text-center font-serif text-2xl">Por favor no asistir con colores como lila y dorado</p>
+    <!-- <p class="text-center font-serif text-2xl">Por favor no asistir con colores como lila y dorado</p> -->
   </section>
 
-  <section class="flex w-full relative items-center justify-center flex-col gap-6 py-20 px-4">
+  <!-- S5 -->
+  <section class="flex w-full h-screen relative items-center justify-center flex-col gap-6 py-20 px-4">
     <div class="absolute inset-0 -z-10 h-full w-full bg-purple-300/20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <p class="font-parisienne text-5xl text-center">Photoshoot</p>
     
@@ -117,12 +122,12 @@
       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
     </svg>
 
-    <div class="aspect-square w-full relative flex overflow-scroll snap-x snap-mandatory [&>img]:w-full [&>img]:left-0 [&>img]:sticky [&>img]:object-cover [&>img]:rounded-3xl [&>img]:snap-start">
+    <div class="aspect-auto w-full relative flex overflow-scroll snap-x snap-mandatory [&>img]:w-full [&>img]:left-0 [&>img]:sticky [&>img]:object-cover [&>img]:rounded-3xl [&>img]:snap-start">
       
+      <img src="../assets/fotos/img-1.jpg" class="object-cover">
+      <img src="../assets/fotos/img-2.jpg" class="object-cover">
       <img src="../assets/fotos/img-3.jpg" class="object-cover">
       <img src="../assets/fotos/img-4.jpg" class="object-cover">
-      <img src="../assets/fotos/img-17.jpg" class="object-cover">
-      <img src="../assets/fotos/img-18.jpg" class="object-cover">
       <img src="../assets/fotos/img-5.jpg" class="object-cover object-right">
       <img src="../assets/fotos/img-6.jpg" class="object-left">
       <img src="../assets/fotos/img-7.jpg" class="">
@@ -132,6 +137,7 @@
     </div>
   </section>
 
+  <!-- S6 -->
   <section class="w-full h-full bg-[url(/assets/fotos/img-12.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center ">
     <div class="relative bg-white/55 backdrop-invert backdrop-opacity-15 h-screen w-full flex flex-col items-center justify-center space-y-10 p-4">
       <p class="font-parisienne text-5xl text-center">Mesa de regalos</p>
@@ -140,67 +146,66 @@
         <p class="font-bold">
           Nombre y Apellido:<br>
           <span class="font-normal">
-            Maia del Milagro Leccese
+            Ximena Correa
           </span>
         </p>
-        <p class="font-bold">
+        <!-- <p class="font-bold">
           CVU:<br>
           <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
-            0000003100041259642881
+            `
               <svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
             </span>
-        </p>
+        </p> -->
 
         <p class="font-bold">
           Alias:<br>
           <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
-            maia.969.silo.mp
+            ximecorrea
             <svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
           </span>
         </p>
         
-        <p class="font-bold">
+        <!-- <p class="font-bold">
           CUIT/CUIL:<br>
           <span class="font-normal">
             27501059698
           </span>
-        </p>
+        </p> -->
         
-        <p class="font-bold">
+        <!-- <p class="font-bold">
           Banco:<br>
           <span class="font-normal">
             Mercado Pago
           </span>
-        </p>
+        </p> -->
       </div>
     </div>
   </section>
   
+  <!-- S7 -->
   <section class="h-full w-full flex items-center justify-center bg-[url(/assets/fotos/img-14.jpg)] bg-cover bg-no-repeat bg-center">
     <div class="relative bg-white/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center space-y-20 py-20 px-4">
       <p class="font-parisienne text-5xl text-center">Confirmar Asistencia</p>
-      <p class="text-center font-serif text-2xl">Por favor confirmar su asistencia hasta el lunes 7 de abril</p>
+      <p class="text-center font-serif text-2xl">Por favor confirmar su asistencia hasta el 30 de Enero</p>
       
       <div class="flex flex-col items-center justify-center gap-6 w-full">
-        <button (click)="openwhatsapp(3815585823)" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
-          <span>CONFIRMAR A 3815585823</span>
-        </button>
-        <button (click)="openwhatsapp(3813979293)" class="bg-purple-800/50 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
-          <span>CONFIRMAR A 3813979293</span>
+        <button (click)="openwhatsapp(3816990825)" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+          <span>CONFIRMAR POR WSP</span>
         </button>
       </div>
     </div>
   </section>
 
+  <!-- S8 -->
   <section class="flex items-center justify-center flex-col h-screen gap-6 relative">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_200%)]"></div>
     <p class="font-parisienne text-5xl text-center">La Misa</p>
-    <div class="flex flex-col items-start justify-center p-4 gap-6 w-full">
-      <img src="../assets/fotos/iglesia.jpg" class="rounded-2xl">
-      <h1 class="font-bold text-xl">Iglesia Virgen de la Merced</h1>
+    <div class="flex flex-col items-center justify-center p-4 gap-6 w-full">
+      <img src="../assets/fotos/iglesia.webp" class="rounded-2xl sm:max-w-md">
+      <h1 class="font-bold text-xl">Iglesia Catedral de Nuestra Señora de la Encarnación</h1>
       <div class="flex flex-col text-sm items-start justify-center gap-1">
-        <h1 class="font-bold">Día y horario: <span class="font-normal">9 de abril, 20:00</span></h1>
-        <h1 class="font-bold">Dirreccion: <span class="font-normal">24 de Septiembre 253</span></h1>
+        <h1 class="font-bold">Día y horario: <span class="font-normal">4 de enero, "12:00"</span></h1>
+        <h1 class="font-bold">Dirreccion: <span class="font-normal">24 de Septiembre 420</span></h1>
       </div>
 
       <button (click)="iglesiaMap()" class="bg-purple-800 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
@@ -209,9 +214,10 @@
     </div>
   </section>
 
-  <section class="w-full h-screen bg-[url(/assets/fotos/img-11.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center">
+  <!-- S9 -->
+  <section class="w-full h-screen bg-[url(/assets/fotos/img-end.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center">
     <div class="bg-black/30 backdrop-invert backdrop-opacity-10 h-full w-full flex items-center justify-center">
-      <p class="font-serif text-2xl text-white text-center mt-56">Te espero <br><span class="font-parisienne text-5xl">Maia</span></p>
+      <p class="font-serif text-2xl text-white text-center mt-56">Te espero <br><span class="font-parisienne text-5xl">Xime</span></p>
     </div>
   </section>
 </main>
