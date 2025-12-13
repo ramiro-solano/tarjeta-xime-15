@@ -1,155 +1,256 @@
 <main class="max-w-2xl w-full h-ful m-auto">
-  <!-- S1 -->
-  <section class="w-full h-full bg-black  flex items-center justify-center relative">
-    <div class="absolute -top-20 inset-0 bg-[url(/assets/fotos/img-main.jpg)] bg-contain bg-no-repeat bg-center">
-    </div>
-    <div class="relative bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center">
-      <div class="absolute top-24">
-        <span class=" text-center text-6xl font-extralight text-white font-parisienne">mis</span> 
-      </div>
-      <div class="flex flex-col items-center justify-center space-x-4 mt-80 space-y-6">
+	<!-- S1 -->
+	<section class="w-full h-full bg-black  flex items-center justify-center relative">
+		<div class="relative bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center overflow-hidden">
 
-        <h2 class="font-parisienne text-8xl text-white text-center mt-">
-          Xime
-        </h2>
+			<div class="absolute -top-20 z-0 inset-0 bg-[url(/assets/fotos/img-main.webp)] bg-contain bg-no-repeat bg-center">
+			</div>
 
-        <ul class="flex justify-center items-center gap-6 w-full [&>li>span]:text-white">
-        <li class="flex flex-col items-center space-x-2 space-y-2">
-          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
-            {{reaminingDays}}
-          </div>
-          <span class="font-light text-sm">
-            DÍAS
-          </span>
-        </li>
-        <li class="flex flex-col items-center space-x-2 space-y-2">
-          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
-            {{remainingHours}}
-          </div>
-          <span class="font-light text-sm">
-            HORAS
-          </span>
-        </li>
-        <li class="flex flex-col items-center space-x-2 space-y-2">
-            <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
-                {{remainingMinutes}}
-            </div>
-            <span class="font-light text-sm">
-                MIN
-            </span>
-        </li>
-        <li class="flex flex-col items-center space-x-2 space-y-2">
-          <div class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
-            {{remainingSeconds}}
-            </div>
-            <span class="font-light text-sm">
-                SEG
-            </span>
-        </li>
-      </ul>
-      
-      <div (click)="playMusic()">
-        @if (!isPause) {
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white/50">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-        }
-        @else {
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white/50">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-            </svg>
-          }
-      </div>
-    </div>
-    </div>
-  </section>
-  
-  <!-- S2 -->
-  <section class="w-full h-full bg-[url(/assets/fotos/img-second.jpg)] bg-cover bg-center flex items-center justify-center">
-    <div class="bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex items-center justify-center px-4">
-      <h1 class="font-serif text-2xl text-white mt-96 text-center">
-        Los momentos más importantes, merecen ser compartidos.
-      </h1>
-    </div>
-  </section>
+		<!-- white stars -->
+			<div class="absolute -left-20 top-0 z-10 px-0">
+				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white/70 size-44" viewBox="0 0 24 24"
+					color="currentColor">
+					<path
+						d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+						stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="absolute -right-16 top-10 z-10 px-0 rotate-45">
+				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white/70 size-40" viewBox="0 0 24 24"
+					color="currentColor">
+					<path
+						d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+						stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="absolute -left-16 -bottom-8 z-10 px-0 rotate-95">
+				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white/70 size-40" viewBox="0 0 24 24"
+					color="currentColor">
+					<path
+						d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+						stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="absolute -right-6 -bottom-8 z-10 px-0 rotate-12">
+				<svg xmlns="http://www.w3.org/2000/svg" class="fill-white/70 size-44" viewBox="0 0 24 24"
+					color="currentColor">
+					<path
+						d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+						stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<!-- pink stars -->
+			<div class="absolute right-20 bottom-28 z-10 px-0 rotate-12">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-pink-500/70 fill-none size-12" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+      		<div class="absolute -left-7 top-40 z-10 px-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-pink-500/70 fill-none size-16" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+      		<div class="absolute -left-16 bottom-48 z-10 px-0 rotate-90">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-pink-500/70 fill-none size-32" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+      		<div class="absolute left-10 top-0 z-10 px-0 rotate-90">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-pink-500/70 fill-none size-12" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+      		<div class="absolute right-16 top-16 z-10 px-0 rotate-90">
+              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-pink-500/70 fill-none size-8" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+			<!-- pink stars -->
+			<div class="absolute right-14 -top-10 z-10 px-0 rotate-90">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-pink-300/70 size-36" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
+      		<div class="absolute -right-14 bottom-40 z-10 px-0 rotate-45">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-pink-300/70 size-36" viewBox="0 0 24 24" color="currentColor">
+                  <path d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      		</div>
 
-  <!-- S3 -->
-  <section class="w-full h-full bg-[url(/assets/fotos/img-13.jpg)] bg-cover bg-center flex items-center justify-center text-white">
-    <div class="bg-black/60 backdrop-invert backdrop-opacity-20 h-screen w-full flex flex-col items-center justify-center px-4 space-y-4">
-      <p class="font-parisienne text-5xl text-center">La fiesta</p>
-      
-      <div class="flex flex-col items-center justify-center space-y-4 w-full">
-        <img src="../assets/fotos/salon.png" class="rounded-2xl sm:max-w-md">
-        
-        <h1 class="font-bold text-xl">Salón Franchesca</h1>
 
-        <div class="flex flex-col text-base font-serif items-start justify-center space-y-3">
-          <p class="font-bold">
-            Día y horario: 
-            <span class="font-normal block">28 de febrero desde 22:00</span>
-            <span class="font-normal block">¡Los esperamos para disfrutar de una deliciosa recepción! 🍽✨</span>
-            <span class="font-normal block">Hasta las 05:00</span>
-          </p>
-          <p class="font-bold">
-            Lugar: 
-            <span class="font-normal block">La plata 2463 SMT, Tucumán</span>
-          </p>
-        </div>
-      
-        <button (click)="salonMap()" class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
-        <span>Ver Direccion</span>
-        </button>
-      </div>
-    </div>
-  </section>
+			<div class="absolute top-28">
+				<span class=" text-center text-8xl font-extralight text-pink-500/70 font-parisienne">mis</span>
+			</div>
+			<div class="flex flex-col items-center justify-center space-x-4 mt-80 space-y-6 z-40">
 
-  <!-- S4 -->
-  <section class="flex items-center justify-center flex-col h-screen gap-6 py-20 px-4 relative">
-    <div class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(106,90,150,.5)_120%)]"></div>
-    <p class="font-parisienne text-5xl text-center">Dress Code</p>
-    <img src="../assets/fotos/dress-code.webp" class="size-44">
-    <p class="text-center font-bold font-serif text-2xl">- Elegante -</p>
-    <!-- <p class="text-center font-serif text-2xl">Por favor no asistir con colores como lila y dorado</p> -->
-  </section>
+				<h2 class="font-parisienne text-8xl text-white text-center mt-">
+					Xime
+				</h2>
 
-  <!-- S5 -->
-  <section class="flex w-full h-screen relative items-center justify-center flex-col gap-6 py-20 px-4">
-    <div class="absolute inset-0 -z-10 h-full w-full bg-pink-300/20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-    <p class="font-parisienne text-5xl text-center">Photoshoot</p>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 text-gray-100/30 absolute right-8 z-10 bottom-[43%]">
-      <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
-    </svg>
+				<ul class="flex justify-center items-center gap-6 w-full [&>li>span]:text-white">
+					<li class="flex flex-col items-center space-x-2 space-y-2">
+						<div
+							class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+							{{reaminingDays}}
+						</div>
+						<span class="font-light text-sm">
+							DÍAS
+						</span>
+					</li>
+					<li class="flex flex-col items-center space-x-2 space-y-2">
+						<div
+							class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+							{{remainingHours}}
+						</div>
+						<span class="font-light text-sm">
+							HORAS
+						</span>
+					</li>
+					<li class="flex flex-col items-center space-x-2 space-y-2">
+						<div
+							class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+							{{remainingMinutes}}
+						</div>
+						<span class="font-light text-sm">
+							MIN
+						</span>
+					</li>
+					<li class="flex flex-col items-center space-x-2 space-y-2">
+						<div
+							class="bg-white/20 rounded-full flex h-16 w-16 items-center justify-center text-xl text-white font-medium shadow-md">
+							{{remainingSeconds}}
+						</div>
+						<span class="font-light text-sm">
+							SEG
+						</span>
+					</li>
+				</ul>
 
-    <div class="aspect-auto w-full relative flex overflow-scroll snap-x snap-mandatory [&>img]:w-full [&>img]:left-0 [&>img]:sticky [&>img]:object-cover [&>img]:rounded-3xl [&>img]:snap-start">
-      
-      <img src="../assets/fotos/img-1.jpg" class="object-cover">
-      <img src="../assets/fotos/img-2.jpg" class="object-cover">
-      <img src="../assets/fotos/img-3.jpg" class="object-cover">
-      <img src="../assets/fotos/img-4.jpg" class="object-cover">
-      <img src="../assets/fotos/img-5.jpg" class="object-cover object-right">
-      <img src="../assets/fotos/img-6.jpg" class="object-left">
-      <img src="../assets/fotos/img-7.jpg" class="">
-      <img src="../assets/fotos/img-8.jpg" class="">
-      <img src="../assets/fotos/img-9.jpg" class="">
-      <img src="../assets/fotos/img-10.jpg" class="">
-    </div>
-  </section>
+				<div (click)="playMusic()" class="z-50">
+					@if (!isPause) {
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="size-10 text-white/50">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+					</svg>
+					}
+					@else {
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="size-10 text-white/50">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+					</svg>
+					}
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- S6 -->
-  <section class="w-full h-full bg-[url(/assets/fotos/img-12.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center ">
-    <div class="relative bg-white/55 backdrop-invert backdrop-opacity-15 h-screen w-full flex flex-col items-center justify-center space-y-10 p-4">
-      <p class="font-parisienne text-5xl text-center">Mesa de regalos</p>
-      <p class="font-serif text-2xl text-center">Para mí tu presencia es el mejor regalo, pero si deseas obsequiarme algo,te dejo mis datos. El salon tambien contara con una mesa para regalos!</p>
-      <div class="flex flex-col items-start justify-center bg-pink-500/30 w-full rounded-3xl p-5 [&>p]:w-full space-y-4 border border-white/30 backdrop-blur-sm">
-        <p class="font-bold">
-          Nombre y Apellido:<br>
-          <span class="font-normal">
-            Ximena Agostina Correa
-          </span>
-        </p>
-        <!-- <p class="font-bold">
+	<!-- S2 -->
+	<section
+		class="w-full h-full bg-[url(/assets/fotos/img-second.webp)] bg-cover bg-center flex items-center justify-center">
+		<div
+			class="bg-black/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex items-center justify-center px-4">
+			<h1 class="font-serif text-2xl text-white mt-96 text-center">
+				Los momentos más importantes, merecen ser compartidos.
+			</h1>
+		</div>
+	</section>
+
+	<!-- S3 -->
+	<section
+		class="w-full h-full bg-[url(/assets/fotos/img-13.jpg)] bg-cover bg-center flex items-center justify-center text-white">
+		<div
+			class="bg-black/60 backdrop-invert backdrop-opacity-20 h-screen w-full flex flex-col items-center justify-center px-4 space-y-4">
+			<p class="font-parisienne text-5xl text-center">La fiesta</p>
+
+			<div class="flex flex-col items-center justify-center space-y-4 w-full">
+				<img src="../assets/fotos/salon.png" class="rounded-2xl sm:max-w-md">
+
+				<h1 class="font-bold text-xl">Salón Franchesca</h1>
+
+				<div class="flex flex-col text-base font-serif items-start justify-center space-y-3">
+					<p class="font-bold">
+						Día y horario:
+						<span class="font-normal block">28 de febrero desde 22:00</span>
+						<span class="font-normal block">¡Los esperamos para disfrutar de una deliciosa recepción!
+							🍽✨</span>
+						<span class="font-normal block">Hasta las 05:00</span>
+					</p>
+					<p class="font-bold">
+						Lugar:
+						<span class="font-normal block">La plata 2463 SMT, Tucumán</span>
+					</p>
+				</div>
+
+				<button (click)="salonMap()"
+					class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+					<span>Ver Direccion</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- S4 -->
+	<section class="flex items-center justify-center flex-col h-screen gap-6 py-20 px-4 relative">
+		<div
+			class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(106,90,150,.5)_120%)]">
+		</div>
+		<p class="font-parisienne text-5xl text-center">Dress Code</p>
+		<img src="../assets/fotos/dress-code.webp" class="size-44">
+		<p class="text-center font-bold font-serif text-2xl">- Elegante -</p>
+		<!-- <p class="text-center font-serif text-2xl">Por favor no asistir con colores como lila y dorado</p> -->
+	</section>
+
+	<!-- S5 -->
+	<section class="flex w-full h-screen relative items-center justify-center flex-col gap-6 py-20 px-4">
+		<div
+			class="absolute inset-0 z-10 h-full w-full bg-pink-300/20 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+		</div>
+		<p class="font-parisienne text-5xl text-center">Photoshoot</p>
+
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+			class="size-8 text-gray-100/30 absolute right-8 z-10 bottom-[43%]">
+			<path fill-rule="evenodd"
+				d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+				clip-rule="evenodd" />
+		</svg>
+
+		<div
+			class="aspect-auto w-full relative flex overflow-scroll snap-x snap-mandatory [&>img]:w-full [&>img]:left-0 [&>img]:sticky [&>img]:object-cover [&>img]:rounded-3xl [&>img]:snap-start">
+
+			<img src="../assets/fotos/img-1.webp" class="object-cover">
+			<img src="../assets/fotos/img-2.webp" class="object-cover">
+			<img src="../assets/fotos/img-3.webp" class="object-cover">
+			<img src="../assets/fotos/img-4.webp" class="object-cover">
+			<img src="../assets/fotos/img-5.webp" class="object-cover object-right">
+			<img src="../assets/fotos/img-6.webp" class="object-left">
+			<img src="../assets/fotos/img-7.webp" class="">
+			<img src="../assets/fotos/img-8.webp" class="">
+			<img src="../assets/fotos/img-9.webp" class="">
+			<img src="../assets/fotos/img-10.webp" class="">
+		</div>
+	</section>
+
+	<!-- S6 -->
+	<section
+		class="w-full h-full bg-[url(/assets/fotos/img-12.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center ">
+		<div
+			class="relative bg-white/55 backdrop-invert backdrop-opacity-15 h-screen w-full flex flex-col items-center justify-center space-y-10 p-4">
+			<p class="font-parisienne text-5xl text-center">Mesa de regalos</p>
+			<p class="font-serif text-2xl text-center">Para mí tu presencia es el mejor regalo, pero si deseas
+				obsequiarme algo,te dejo mis datos. El salon tambien contara con una mesa para regalos!</p>
+			<div
+				class="flex flex-col items-start justify-center bg-pink-500/30 w-full rounded-3xl p-5 [&>p]:w-full space-y-4 border border-white/30 backdrop-blur-sm">
+				<p class="font-bold">
+					Nombre y Apellido:<br>
+					<span class="font-normal">
+						Ximena Agostina Correa
+					</span>
+				</p>
+				<!-- <p class="font-bold">
           CVU:<br>
           <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
             `
@@ -157,78 +258,92 @@
             </span>
         </p> -->
 
-        <p class="font-bold">
-          Alias:<br>
-          <span class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
-            ximecorreaa
-            <svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-          </span>
-        </p>
-        
-        <!-- <p class="font-bold">
+				<p class="font-bold">
+					Alias:<br>
+					<span
+						class="bg-slate-200 font-normal px-3 py-2 rounded-lg flex items-center justify-between gap-6 w-full backdrop-blur-sm">
+						ximecorreaa
+						<svg (click)="copy($event)" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy">
+							<rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+							<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+						</svg>
+					</span>
+				</p>
+
+				<!-- <p class="font-bold">
           CUIT/CUIL:<br>
           <span class="font-normal">
             27501059698
           </span>
         </p> -->
-        
-        <!-- <p class="font-bold">
+
+				<!-- <p class="font-bold">
           Banco:<br>
           <span class="font-normal">
             Mercado Pago
           </span>
         </p> -->
-      </div>
-    </div>
-  </section>
-  
-  <!-- S7 -->
-  <section class="h-full w-full flex items-center justify-center bg-[url(/assets/fotos/img-14.jpg)] bg-cover bg-no-repeat bg-center">
-    <div class="relative bg-white/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center space-y-20 py-20 px-4">
-      <p class="font-parisienne text-5xl text-center">Confirmar Asistencia</p>
-      <p class="text-center font-serif text-2xl">Por favor confirmar su asistencia hasta el 30 de Enero</p>
-      
-      <div class="flex flex-col items-center justify-center gap-6 w-full">
-        <button (click)="openwhatsapp(3816990825)" class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
-          <span>CONFIRMAR POR WSP</span>
-        </button>
-      </div>
-    </div>
-  </section>
+			</div>
+		</div>
+	</section>
 
-  <!-- S8 -->
-  <section class="flex items-center justify-center flex-col h-screen gap-6 relative">
-    <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_200%)]"></div>
-    <p class="font-parisienne text-5xl text-center">La Misa</p>
-    <div class="flex flex-col items-center justify-center p-4 gap-6 w-full">
-      <img src="../assets/fotos/iglesia.webp" class="rounded-2xl sm:max-w-md">
-      <h1 class="font-bold text-xl">Iglesia Catedral de Nuestra Señora de la Encarnación</h1>
-      <div class="flex flex-col text-sm items-start justify-center gap-1">
-        <h1 class="font-bold">Día y horario: <span class="font-normal">4 de enero, "12:00"</span></h1>
-        <h1 class="font-bold">Dirreccion: <span class="font-normal">24 de Septiembre 420</span></h1>
-      </div>
+	<!-- S7 -->
+	<section
+		class="h-full w-full flex items-center justify-center bg-[url(/assets/fotos/img-14.jpg)] bg-cover bg-no-repeat bg-center">
+		<div
+			class="relative bg-white/5 backdrop-invert backdrop-opacity-5 h-screen w-full flex flex-col items-center justify-center space-y-20 py-20 px-4">
+			<p class="font-parisienne text-5xl text-center">Confirmar Asistencia</p>
+			<p class="text-center font-serif text-2xl">Por favor confirmar su asistencia hasta el 30 de Enero</p>
 
-      <button (click)="iglesiaMap()" class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
-        <span>Ver Direccion</span>
-      </button>
-    </div>
-  </section>
+			<div class="flex flex-col items-center justify-center gap-6 w-full">
+				<button (click)="openwhatsapp(3816990825)"
+					class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+					<span>CONFIRMAR POR WSP</span>
+				</button>
+			</div>
+		</div>
+	</section>
 
-  <!-- S9 -->
-  <section class="w-full h-screen bg-[url(/assets/fotos/img-end.jpg)] bg-cover bg-no-repeat bg-center flex items-center justify-center">
-    <div class="bg-black/30 backdrop-invert backdrop-opacity-10 h-full w-full flex items-center justify-center">
-      <p class="font-serif text-2xl text-white text-center mt-56">Te espero <br><span class="font-parisienne text-5xl">Xime</span></p>
-    </div>
-  </section>
+	<!-- S8 -->
+	<section class="flex items-center justify-center flex-col h-screen gap-6 relative">
+		<div
+			class="absolute inset-0 z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_200%)]">
+		</div>
+		<p class="font-parisienne text-5xl text-center">La Misa</p>
+		<div class="flex flex-col items-center justify-center p-4 gap-6 w-full">
+			<img src="../assets/fotos/iglesia.webp" class="rounded-2xl sm:max-w-md">
+			<h1 class="font-bold text-xl">Iglesia Catedral de Nuestra Señora de la Encarnación</h1>
+			<div class="flex flex-col text-sm items-start justify-center gap-1">
+				<h1 class="font-bold">Día y horario: <span class="font-normal">4 de enero, "12:00"</span></h1>
+				<h1 class="font-bold">Dirreccion: <span class="font-normal">24 de Septiembre 420</span></h1>
+			</div>
+
+			<button (click)="iglesiaMap()"
+				class="bg-pink-500 text-white font-bold py-4 px-8 max-w-96 w-full rounded-2xl">
+				<span>Ver Direccion</span>
+			</button>
+		</div>
+	</section>
+
+	<!-- S9 -->
+	<section
+		class="w-full h-screen bg-[url(/assets/fotos/img-end.webp)] bg-cover bg-no-repeat bg-center flex items-center justify-center">
+		<div class="bg-black/30 backdrop-invert backdrop-opacity-10 h-full w-full flex items-center justify-center">
+			<p class="font-serif text-2xl text-white text-center mt-56">Te espero <br><span
+					class="font-parisienne text-5xl">Xime</span></p>
+		</div>
+	</section>
 </main>
 
 <!-- Modal -->
- @if (isModalOpen) {
-   <div class="fixed inset-0 flex items-center justify-center bg-black/50 p-4">
-     <div class="bg-white p-6 rounded-3xl text-center max-w-md w-full shadow-2xl">
-       <div class="flex justify-center">
-         <button (click)="playMusic()" class="bg-pink-500 text-white px-4 py-2 rounded-full">Entrar</button>
-        </div>
-      </div>
-    </div>
-  }
+@if (isModalOpen) {
+<div class="fixed inset-0 flex items-center justify-center bg-black/50 p-4">
+	<div class="bg-white p-6 rounded-3xl text-center max-w-md w-full shadow-2xl">
+		<div class="flex justify-center">
+			<button (click)="playMusic()" class="bg-pink-500 text-white px-4 py-2 rounded-full">Entrar</button>
+		</div>
+	</div>
+</div>
+}
